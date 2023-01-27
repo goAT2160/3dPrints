@@ -2,6 +2,9 @@ var button = document.getElementById("btn")
 var Rbutton = document.getElementById("rbtn")
 var h1 = document.getElementById("number")
 localStorage.setItem("prints", localStorage.getItem("prints"))
+if (localStorage.getItem("prints") == null) {
+    localStorage.setItem("prints", "10")
+}
 
 h1.innerHTML = localStorage.getItem("prints")
 function minus() {
